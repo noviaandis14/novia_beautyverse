@@ -1,0 +1,23 @@
+body {
+    background-color: #fdf0f5; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #5d4037;
+    margin: 0;
+    text-align: center;
+}
+
+nav { background: #ffcdd2; padding: 20px; }
+nav a { margin: 0 15px; text-decoration: none; color: #ad1457; font-weight: bold; }
+
+.hero { padding: 50px; }
+.girly-animation {
+    width: 200px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+footer { background: #f8bbd0; padding: 20px; margin-top: 50px; }
