@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <title>Services - Novia_Beautyverse</title>
 </head>
@@ -8,24 +9,50 @@
 
 <nav>
     <h1>✨ Services ✨</h1>
-    <a href="index.html">Back Home</a>
+    <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
     <a href="videos.html">Videos</a>
 </nav>
 
 <div class="hero">
     <h2>Our Beauty Hosting Packages</h2>
-    <div style="display: flex; justify-content: center; gap: 20px;">
-        <div style="background: #fff; padding: 20px; border-radius: 20px;">
-            <h3>Basic Glow</h3>
-            <p>Perfect for starters!</p>
+    
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        
+        <!-- Paket Basic Glow -->
+        <div style="text-align: center;">
+            <button onclick="showImage('img-basic')" style="padding: 20px; border-radius: 20px; border: none; cursor: pointer; background: #fff; width: 200px;">
+                <h3>Basic Glow</h3>
+                <p>Perfect for starters!</p>
+            </button>
+            <br>
+            <img id="img-basic" src="foto1.jpeg" style="display:none; width: 200px; margin-top: 15px; border-radius: 15px; border: 3px solid #ff80ab;" alt="Basic Glow">
         </div>
-        <div style="background: #fff; padding: 20px; border-radius: 20px;">
-            <h3>Premium Glam</h3>
-            <p>For ultimate beauty creators!</p>
+
+        <!-- Paket Premium Glam -->
+        <div style="text-align: center;">
+            <button onclick="showImage('img-premium')" style="padding: 20px; border-radius: 20px; border: none; cursor: pointer; background: #fff; width: 200px;">
+                <h3>Premium Glam</h3>
+                <p>For ultimate beauty creators!</p>
+            </button>
+            <br>
+            <img id="img-premium" src="foto2.jpeg" style="display:none; width: 200px; margin-top: 15px; border-radius: 15px; border: 3px solid #ff80ab;" alt="Premium Glam">
         </div>
+
     </div>
 </div>
 
+<script>
+    function showImage(id) {
+        var x = document.getElementById(id);
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+
 </body>
+</html>
 </html>
